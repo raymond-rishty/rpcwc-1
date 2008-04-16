@@ -1,0 +1,99 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="javascript">
+if(document.images){
+announr = new Image();
+announr.src = "buttons/an_ruby.jpg";
+announl = new Image();
+announl.src="buttons/an_lit.jpg";
+
+aboutr = new Image();
+aboutr.src = "buttons/ab_ruby.jpg";
+activr = new Image();
+activr.src = "buttons/ac_ruby.jpg";
+missr = new Image();
+missr.src = "buttons/cp_rub.jpg";
+chopr = new Image();
+chopr.src = "buttons/ch_ruby.jpg";
+pcar = new Image();
+pcar.src = "buttons/p_ruby.jpg";
+homer = new Image();
+homer.src = "buttons/ho_ruby.jpg";
+
+aboutl = new Image();
+aboutl.src = "buttons/ab_lit.jpg";
+activl = new Image();
+activl.src = "buttons/ac_lit.jpg";
+missl = new Image();
+missl.src = "buttons/cp_lit.jpg";
+chopl = new Image();
+chopl.src = "buttons/ch_lit.jpg";
+pcal = new Image();
+pcal.src = "buttons/lit_p.jpg";
+homel = new Image();
+homel.src = "buttons/lit_ho.jpg";
+}
+
+function flip(imageID,imageName) { 
+{
+document.images[imageID].src = eval(imageName + ".src");
+}
+
+}</SCRIPT>
+</HEAD>
+<body BACKGROUND="whitemarb.jpg">
+
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=0 WIDTH="100%">
+<TR><TD WIDTH=110 VALIGN="TOP" ROWSPAN=6>
+<P>&nbsp;&nbsp;&nbsp;<IMG SRC="objects/rot_cross.gif">
+
+<A HREF = "Events.htm"  onMouseOver="flip('but1', 'announl')"  onMouseOut="flip('but1', 'announr')">
+<img src = "buttons/an_ruby.jpg" BORDER = 0 NAME = "but1" ></a>
+
+<A HREF = "aboutus.htm"  onMouseOver="flip('but4', 'aboutl')"  onMouseOut="flip('but4', 'aboutr')">
+<img src = "buttons/ab_ruby.jpg" BORDER = 0 NAME = "but4" ></A>
+
+<A HREF = "Activity.htm"  onMouseOver="flip('but2', 'activl')"  onMouseOut="flip('but2', 'activr')">
+<img src = "buttons/ac_ruby.jpg" BORDER = 0 NAME = "but2" ></A>
+
+<A HREF = "MISSION.HTM" onMouseOver="flip('but3', 'missl')"  onMouseOut="flip('but3', 'missr')">
+<img src = "buttons/Cp_rub.jpg" BORDER = 0 NAME = "but3" ></A>
+
+<A HREF = "chop.htm" onMouseOver="flip('but7', 'chopl')"onMouseOut="flip('but7', 'chopr')">
+<img src = "buttons/ch_ruby.jpg" BORDER = 0 NAME = "but7"></a>
+
+<A HREF = "http://www.pcanet.org"  onMouseOver="flip('but5', 'pcal')"  onMouseOut="flip('but5', 'pcar')">
+<img src = "buttons/p_ruby.jpg" BORDER = 0 NAME = "but5" ></a>
+
+<A HREF = "home.htm"  onMouseOver="flip('but6', 'homel')" onMouseOut="flip('but6', 'homer')">
+<img src = "buttons/ho_ruby.jpg" BORDER = 0 NAME = "but6" ></a><b><p>
+<IMG SRC="path.jpg" WIDTH=103 HEIGHT=146 BORDER=0>
+Sunday Services:<p>Sunday Bible school at 9:45AM<P>Worship Service at 11:00AM<P>Cross Training at 6:30PM</b>
+<td width=30><TD VALIGN="TOP" width="79%" align=center><h2><FONT SIZE=4 FACE="Arial" COLOR="maroon"><b><I>RPC Upcoming Events</font></u></h2><br></tr>
+<tr><td><td>
+<BR><BR>
+<center><b>MONTHLY SUNDAY EVEVING SCHEDULE AT RPC</center><br>
+Sunday Evening “Cross-Training”</b>
+<p>“Cross-Training” has in view the cross of Christ that we are to have in sight as we run the race set before us (Hebrews 12:1-3) and the cross of discipleship we are to take up as we follow Jesus Christ (Luke 9:23). &nbsp;On Sunday evenings at 6:30 p.m. RPC will conduct practical, biblical training using Power Point, handouts and interactive study of God’s Word, coupled with small group prayer. &nbsp;“Cross-Training” will be held the first, third and fourth Sundays of the month in the church sanctuary.
+<p><b>RPC Supper Clubs</b>
+<p>The <u>second</u> Sunday of each month opportunity is provided for RPC Supper Clubs to meet for the purpose of building community and cultivating prayer. &nbsp;The Supper Clubs gather in various homes for 90 minutes to 2 hours some time in afternoon or early evening to eat a simple meal together, to discuss questions related to the morning sermon and to pray together.
+<p><b>“Worship Where We Are”</b>
+<p>On those months that have a <u>fifth</u> Sunday, we will meet downstairs in Fellowship Hall for a covered-dish dinner. &nbsp;Following the dinner, we remain downstairs and hold a “Worship Where We Are” evening service, including sharing, song, supplication and study of God’s Word.
+<p>
+Note: &nbsp;This schedule will be adjusted according to special events and circumstances.
+<p><br><br>
+
+</tr>
+<tr><td><td>&nbsp;<img src="chillws.jpg" align=right width=125 height=175><br><B>ATTENTION PARENTS! -</B>&nbsp;  --a<b><I> Children's Worship Service</i></b> is held at 11:00AM (concurrent with regular service) in the classroom next to the nursery upstairs.  Parents of children ages 4-9 are encouraged to include their children in the service designed especially to be meaningful to children in the worship of God.  Elements of the service are singing, a Bible story, prayer and a creative hands-on learning activity.<p>&nbsp;<P>
+<tr><td><td>&nbsp;<p>&nbsp;
+<tr align=center><td><td><img src="handi.jpg" width=36 height=36 align=middle>&nbsp;&nbsp; <font face="Western">Reformed Presbyterian Church<br>312 West Union Street<br>West Chester, PA 19382<br>610-696-3482<br> <A href=mailto:rpcpca@ccil.org>rpcpca@ccil.org</A><p><br>
+<CENTER>
+<A href="home.htm">[home]</A>&nbsp;&nbsp;
+<A href="http://www.pcanet.org">[pca]</A>&nbsp;&nbsp;
+<A href="MISSION.htm">[missions]</A>&nbsp;&nbsp;
+<A href="Activity.htm">[activities]</A>&nbsp;&nbsp;
+<A href="Events.htm">[announcements]</A>&nbsp;&nbsp;
+<A href="aboutus.htm">[about us]</A>&nbsp;&nbsp;
+</CENTER>
+</table></body>
+</html>
