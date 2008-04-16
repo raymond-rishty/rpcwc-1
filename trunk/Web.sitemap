@@ -12,6 +12,7 @@
     <siteMapNode url="aboutussection.aspx" title="About Us">
       <siteMapNode url="aboutus.aspx" title="Vision and Mission" />
       <siteMapNode url="beliefs.aspx" title="Beliefs" />
+      <siteMapNode url="ministryplan.aspx" title="RPC Ministry Plan" />
       <siteMapNode url="leadership.aspx" title="Leadership" />
       <siteMapNode url="history.aspx" title="History of RPC" />
       <siteMapNode url="newsletters.aspx" title="Newsletters" />
