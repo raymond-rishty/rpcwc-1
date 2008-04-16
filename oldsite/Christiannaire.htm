@@ -1,0 +1,157 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<HEAD>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (Win98; I) [Netscape]">
+   <title>Community Houses of Prayer</title>
+
+<SCRIPT LANGUAGE="javascript">
+
+function popup1(formA){
+
+    var offerNo = new Array(3);
+    var heavNo = new Array(3);
+    var JesusNo = new Array(3);
+    var purpNo = new Array(3);
+    var messNo = new Array(3);
+    var viewNo = new Array(3);
+    var underNo = new Array(3);
+
+    for(var i=0;i < formA.offer.length;i++){
+	if(formA.offer[i].checked){
+	    offerNo[i] = "CHECKED";
+	}
+    }
+    for(var i=0;i < formA.heaven.length;i++){
+	if(formA.heaven[i].checked){
+	    heavNo[i] = "CHECKED";
+	}
+    }
+    for(var i=0;i < formA.Jesus.length;i++){
+	if(formA.Jesus[i].checked){
+	    JesusNo[i] = "CHECKED";
+	}
+    }
+    for(var i=0;i < formA.purpose.length;i++){
+	if(formA.purpose[i].checked){
+	    purpNo[i] = "CHECKED";
+	}
+    }
+    for(var i=0;i < formA.message.length;i++){
+	if(formA.message[i].checked){
+	    messNo[i] = "CHECKED";
+	}
+    }
+    for(var i=0;i < formA.view.length;i++){
+	if(formA.view[i].checked){
+	    viewNo[i] = "CHECKED";
+	}
+    }
+    for(var i=0;i < formA.understanding.length;i++){
+	if(formA.understanding[i].checked){
+	    underNo[i] = "CHECKED";
+	}
+    }
+
+
+var bod = "<body vlink='blue' background='whitemarb.jpg' >&nbsp;<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH='100%' ><tr><td VALIGN=TOP ROWSPAN='6' WIDTH='110'>&nbsp;</td><td><CENTER><img src='Christiannaire.gif'></CENTER><P>&nbsp;<br><BLOCKQUOTE><I><font color ='marroon'>The following are your answers to the 7 questions relating to current understanding of the Christian faith with the most accurate answer briefly described below.</i></font><Ol><b><li> What description best expresses your  understanding of God?</b></li><i><form><input type='radio' Name='understanding' value='a'" + underNo[0] + "> &nbsp;</i>a.)<i>&nbsp;&nbsp;an impersonal force<br><input type='radio' Name='understanding' value='b' " + underNo[1] + "> &nbsp;</i>b.)<i>&nbsp;&nbsp;a personal creator<br><input type='radio' Name='understanding' value='c' " + underNo[2] + "> &nbsp;</i>c.)<i>&nbsp;&nbsp;a distant supreme being<br><input type='radio' Name='understanding' value='d' " + underNo[3] + "> &nbsp;</i>d.)<i>&nbsp;&nbsp;a product of people's imaginations<br></i><hr><br>The answer is 'b'.  God is described throughout the Bible as a personal creator who can be known and who is to be worshipped. While God is transcendent over all his creation, he is not distant.  We are made by God; he is not made up by us.  KEY PASSAGE: <blockquote><i>Psalm 100:1-3 Shout for joy to the LORD, all the earth. Worship the LORD with gladness; come before him with joyful songs. Know that the LORD is God. It is he who made us, and we are his.<p>&nbsp;<p></i></blockquote><p><b><li>Which label best captures your view of the Bible?</b></li><p><i><input type='radio' Name='view' value='a' " + viewNo[0] + " > &nbsp;</i>a.)<i>&nbsp;&nbsp;a book of fables and fallacies<br><input type='radio' Name='view' value='b'  " + viewNo[1] + "> &nbsp;</i>b.)<i>&nbsp;&nbsp;a self-help book for living<br><input type='radio' Name='view' value='c'  " + viewNo[2] + "> &nbsp;</i>c.)<i>&nbsp;&nbsp;an important religious book<br><input type='radio' Name='view' value='d'  " + viewNo[3] + "> &nbsp;</i>d.)<i>&nbsp;&nbsp;the literal word of God himself<br></i><hr><br>The Bible is the literal word of God himself.  It is without error in all it says.  It is truth. The Bible directs us in how to know God properly and to understand and live life in a way pleasing to God. KEY PASSAGE:<blockquote><i>1 Thessalonians 2:13 And we also thank God continually because, when you received the word of God, which you heard from us, you accepted it not as the word of men, but as it actually is, the word of God, which is at work in you who believe.<p>&nbsp;<p></i></blockquote><p><b><li>What statement best summarizes the Bible's central message?</b></li><p><i><input type='radio' Name='message' value='a' " + messNo[0] + " > &nbsp;</i>a.)<i>&nbsp;&nbsp;God helps those who help themselves<br><input type='radio' Name='message' value='b' " + messNo[1] + "> &nbsp;</i>b.)<i>&nbsp;&nbsp;treat others the way you want them to treat you<br><input type='radio' Name='message' value='c' " + messNo[2] + "> &nbsp;</i>c.)<i>&nbsp;&nbsp;God saves sinners<br><input type='radio' Name='message' value='d' " + messNo[3] + "> &nbsp;</i>d.)<i>&nbsp;&nbsp;love your neighbor as yourself<br></i><hr><br>While the Bible does teach us that we are treat others the way we would want them to treat us and to love our neighbor as ourselves, neither of these captures the central message. Nowhere does the Bible teach that God helps those who help themselves. Rather, the entire Bible is a document that records God's promise and plan to save sinners.  KEY PASSAGE:<blockquote><i>Romans 1:1-2 Paul, a servant of Christ Jesus, called to be an apostle and set apart for the gospel of God-the gospel he promised beforehand through his prophets in the Holy Scriptures. <p>&nbsp;<p></i></blockquote><p><b><li>Which phrase best reflects the primary purpose of the Ten Commandments? (e.g., You shall not murder.)</b></li><p><i><input type='radio' Name='purpose' value='a' " + purpNo[0] + " > &nbsp;</i>a.)<i>&nbsp;&nbsp;to show us that we are all sinners<br><input type='radio' Name='purpose' value='b' " + purpNo[1] + "> &nbsp;</i>b.)<i>&nbsp;&nbsp;to give us moral guidelines for life<br><input type='radio' Name='purpose' value='c' " + purpNo[2] + "> &nbsp;</i>c.)<i>&nbsp;&nbsp;to keep us from doing wrong<br><input type='radio' Name='purpose' value='d' " + purpNo[3] + "> &nbsp;</i>d.)<i>&nbsp;&nbsp;to provide an outline of religious duty<br></i><hr><br>This question was a little tricky.  While the Bible gives us more than moral 'guidelines' for life (they are not the 10 suggestions, but the 10 commandments), they do provide an outline of religious duty and keep us from doing wrong.  But the main purpose of God's law is to show us that we cannot measure up to God's standard of sinless perfection and so are in need of a Savior.  KEY PASSAGE: <blockquote><i>Romans 3:19-20 Now we know that whatever the law says, it says to those who are under the law, so that every mouth may be silenced and the whole world held accountable to God. Therefore no one will be declared righteous in his sight by observing the law; rather, through the law we become conscious of sin.<p>&nbsp;<p></i></blockquote> <p><b><li>Which of the following best describes the Bible's view of Jesus' death on the cross? </b></li><p><i><input type='radio' Name='Jesus' value='a' " + JesusNo[0] + "> &nbsp;</i>a.)<i>&nbsp;&nbsp;Jesus died to open heaven's door<br><input type='radio' Name='Jesus' value='b' " + JesusNo[1] + "> &nbsp;</i>b.)<i>&nbsp;&nbsp;Jesus died as a hero for his cause<br><input type='radio' Name='Jesus' value='c' " + JesusNo[2] + "> &nbsp;</i>c.)<i>&nbsp;&nbsp;Jesus died as a sacrifice for sinners<br><input type='radio' Name='Jesus' value='d' " + JesusNo[3] + "> &nbsp;</i>d.)<i>&nbsp;&nbsp;Jesus died as the ultimate example of self-sacrifice<br></i><hr><br>The best answer here is 'c', Jesus died as a sacrifice for sinners.  Jesus did not die merely to open heaven's door so that we can earn our way in (i.e. Jesus' work plus mine), nor as an example for us to follow (i.e., my efforts alone), nor just as a hero for his cause (i.e., Jesus' work unrelated to us).  Rather, Jesus died to save sinners by standing in their place to do what they could not.  KEY PASSAGE: <blockquote><i>Romans 3:21-24 But now a righteousness from God, apart from law, has been made known, to which the Law and the Prophets testify. This righteousness from God comes through faith in Jesus Christ to all who believe. There is no difference, for all have sinned and fall short of the glory of God, and are justified freely by his grace through the redemption that came by Christ Jesus.<p>&nbsp;<p></i></blockquote><p><b><li>What is the Bible's teaching of God's requirement for entrance into heaven?</b></li><p><i><input type='radio' Name='heaven' value='a' " + heavNo[0] + " > &nbsp;</i>a.)<i>&nbsp;&nbsp;doing good to other people<br><input type='radio' Name='heaven' value='b' " + heavNo[1] + "> &nbsp;</i>b.)<i>&nbsp;&nbsp;trusting in what God did for sinners<br><input type='radio' Name='heaven' value='c' " + heavNo[2] + "> &nbsp;</i>c.)<i>&nbsp;&nbsp;belief in God and moral living<br><input type='radio' Name='heaven' value='d' " + heavNo[3] + "> &nbsp;</i>d.)<i>&nbsp;&nbsp;sincere belief in some kind of religion<br></i><hr><br>The most popular answer here is 'belief in God and moral living' as the requirement to get into heaven.  But the Bible says that even the devil believes in God and that no one can be moral enough to earn entrance into heaven.  And, just because we believe something doesn't make it true, no matter how sincere we are.  The only way to heaven and eternal life is by rejecting our own ability to save ourselves and relying fully and exclusively on what Jesus did in the place of sinners.  KEY PASSAGE:<blockquote><i>Ephesians 2:8-9 For it is by grace you have been saved, through faith-and this not from yourselves, it is the gift of God-not by works, so that no one can boast.<p>&nbsp;<p></i></blockquote><p><b><li>What 'good news' does Christianity alone claim to offer?</b></li><p><i><input type='radio' Name='offer' value='a' " + offerNo[0] + " > &nbsp;</i>a.)<i>&nbsp;&nbsp;the way to make the world a better place<br><input type='radio' Name='offer' value='b' " + offerNo[1] + "> &nbsp;</i>b.)<i>&nbsp;&nbsp;the way for people to be more loving<br><input type='radio' Name='offer' value='c' " + offerNo[2] + "> &nbsp;</i>c.)<i>&nbsp;&nbsp;the way to achieve our full potential<br><input type='radio' Name='offer' value='d' " + offerNo[3] + "> &nbsp;</i>d.)<i>&nbsp;&nbsp;the way to a restored relationship with God through Jesus Christ<br></i><hr><br>All religions of the world make claims to the first three options to some degree.  But the Bible says that it is only through Jesus Christ that we anyone can be reconciled to God.  It is from that restored relationship with God that the first three will genuinely flow.  KEY PASSAGE:<blockquote><i>John 14:6 Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'</i></blockquote><p>&nbsp;<br></ol><p><font color = 'maroon'>If you'd like a fuller explanation of these things and what they mean to you, <a href='mailto:rpcwc@ccil.org'>send e-mail</a> with your name and address to receive a booklet that will help you to compare your answers with the Bible (as supply allows)</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center></form></BLOCKQUOTE>&nbsp;<p><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:history.go(-1)'>Previous Page</a></center></td></tr></table><table width='100%'><tr><td width=110>&nbsp;</td><td width='79%><img SRC='handi.jpg' height=36 width=36 align=CENTER>&nbsp;<P>&nbsp;<P><font face='Western'>Reformed Presbyterian Church</font><br><font face='Western'>312 West Union Street</font><br><font face='Western'>West Chester, PA 19382</font><br><font face='Western'>610-696-3482</font><br><font face='Western'><a href='mailto:rpcwc@ccil.org'>rpcwc@ccil.org</a></font><br>&nbsp;<br>&nbsp;<br><br><center><p><font face='Western'><a href='home1.htm'>[home]</a>&nbsp; <a href='http://www.pcanet.org'>[pca]</a><a href='mission.htm'>[missions]</a> <a href='Activity.htm'>[activities]</a><a href='Events.htm'>[announcements]</a>&nbsp; <a href='aboutus.htm'>[about us]</a></font></center></td></tr></table></body>"
+
+
+    document.write(bod);
+
+}
+
+function testit(formIn){
+    formIn.message[messNo].checked = true;
+}
+
+function flip(imageID,imageName) {
+{
+document.images[imageID].src = eval(imageName + ".src");
+}
+
+}</SCRIPT>
+</HEAD>
+<body vlink="blue" background="whitemarb.jpg" >
+&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%" >
+<tr>
+<td VALIGN=TOP ROWSPAN="6" WIDTH="110">&nbsp;</td>
+<td><CENTER><img src="Christiannaire.gif" width="306" height="35"></CENTER><P>&nbsp;<br>
+<BLOCKQUOTE><I><font color="marroon">Test your understanding of the Christian faith
+by responding to 7 multiple-choice questions
+</i></font>
+<Ol>
+<b><li> What description best expresses your understanding of God?</b></li>
+<form><input type="radio" Name="understanding" value="a" > &nbsp;a.)&nbsp;&nbsp;<i>an impersonal force<br>
+<input type="radio" Name="understanding" value="b" > &nbsp;</i>b.)<i>&nbsp;&nbsp;a personal creator<br>
+<input type="radio" Name="understanding" value="c"> &nbsp;</i>c.)<i>&nbsp;&nbsp;a distant supreme being<br>
+<input type="radio" Name="understanding" value="d" > &nbsp;</i>d.)<i>&nbsp;&nbsp;a product of people's imaginations<br>
+</i><p>
+
+<b><li>Which label best captures your view of the Bible?</b></li><p><i>
+<input type="radio" Name="view" value="a" > &nbsp;</i>a.)<i>&nbsp;&nbsp;a book of fables and fallacies<br>
+<input type="radio" Name="view" value="b" > &nbsp;</i>b.)<i>&nbsp;&nbsp;a self-help book for living<br>
+<input type="radio" Name="view" value="c"> &nbsp;</i>c.)<i>&nbsp;&nbsp;an important religious book<br>
+<input type="radio" Name="view" value="d" > &nbsp;</i>d.)<i>&nbsp;&nbsp;the literal word of God himself<br>
+</i><p>
+
+<b><li>What statement best summarizes the Bible's central message?</b></li><p><i>
+<input type="radio" Name="message" value="a" > &nbsp;</i>a.)<i>&nbsp;&nbsp;God helps those who help themselves<br>
+<input type="radio" Name="message" value="b" > &nbsp;</i>b.)<i>&nbsp;&nbsp;treat others the way you want them to treat you<br>
+<input type="radio" Name="message" value="c"> &nbsp;</i>c.)<i>&nbsp;&nbsp;God saves sinners<br>
+<input type="radio" Name="message" value="d" > &nbsp;</i>d.)<i>&nbsp;&nbsp;love your neighbor as yourself<br>
+</i><p>
+<b><li>Which phrase best reflects the primary purpose of the Ten Commandments? (e.g., You shall not murder.)</b></li><p><i>
+<input type="radio" Name="purpose" value="a" > &nbsp;</i>a.)<i>&nbsp;&nbsp;to show us that we are all sinners<br>
+<input type="radio" Name="purpose" value="b" > &nbsp;</i>b.)<i>&nbsp;&nbsp;to give us moral guidelines for life<br>
+<input type="radio" Name="purpose" value="c"> &nbsp;</i>c.)<i>&nbsp;&nbsp;to keep us from doing wrong<br>
+<input type="radio" Name="purpose" value="d" > &nbsp;</i>d.)<i>&nbsp;&nbsp;to provide an outline of religious duty<br>
+</i><p>
+<b><li>Which of the following best describes the Bible's view of Jesus' death on the cross? </b></li><p><i>
+<input type="radio" Name="Jesus" value="a" > &nbsp;</i>a.)<i>&nbsp;&nbsp;Jesus died to open heaven's door<br>
+<input type="radio" Name="Jesus" value="b" > &nbsp;</i>b.)<i>&nbsp;&nbsp;Jesus died as a hero for his cause<br>
+<input type="radio" Name="Jesus" value="c"> &nbsp;</i>c.)<i>&nbsp;&nbsp;Jesus died as a sacrifice for sinners<br>
+<input type="radio" Name="Jesus" value="d" > &nbsp;</i>d.)<i>&nbsp;&nbsp;Jesus died as the ultimate example of self-sacrifice<br>
+</i><p>
+<b><li>What is the Bible's teaching of God's requirement for entrance into heaven?</b></li><p><i>
+<input type="radio" Name="heaven" value="a" > &nbsp;</i>a.)<i>&nbsp;&nbsp;doing good to other people<br>
+<input type="radio" Name="heaven" value="b" > &nbsp;</i>b.)<i>&nbsp;&nbsp;trusting in what God did for sinners<br>
+<input type="radio" Name="heaven" value="c"> &nbsp;</i>c.)<i>&nbsp;&nbsp;belief in God and moral living<br>
+<input type="radio" Name="heaven" value="d" > &nbsp;</i>d.)<i>&nbsp;&nbsp;sincere belief in some kind of religion<br>
+</i><p>
+<b><li>What "good news" does Christianity alone claim to offer?</b></li><p><i>
+<input type="radio" Name="offer" value="a"> &nbsp;</i>a.)<i>&nbsp;&nbsp;the way to make the world a better place<br>
+<input type="radio" Name="offer" value="b" > &nbsp;</i>b.)<i>&nbsp;&nbsp;the way for people to be more loving<br>
+<input type="radio" Name="offer" value="c"> &nbsp;</i>c.)<i>&nbsp;&nbsp;the way to achieve our full potential<br>
+<input type="radio" Name="offer" value="d" > &nbsp;</i>d.)<i>&nbsp;&nbsp;the way to a restored relationship with God through Jesus Christ<br>
+</i><p>
+</ol><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" onClick="popup1(this.form)" value = "Click here to see how you did."></center></form>
+</BLOCKQUOTE>&nbsp;<p><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:history.go(-1)">Previous Page</a></center>
+</td>
+</tr>
+</table>
+
+<table width="100%">
+<tr><td width=110>&nbsp;</td>
+<td width="79%>
+<img SRC="handi.jpg" height=36 width=36 align=CENTER>&nbsp;<P>&nbsp;<P><font face="Western">Reformed
+Presbyterian Church</font>
+<br><font face="Western">312 West Union Street</font>
+<br><font face="Western">West Chester, PA 19382</font>
+<br><font face="Western">610-696-3482</font>
+<br><font face="Western"><a href="mailto:rpcwc@ccil.org">rpcwc@ccil.org</a></font>
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<center>
+<p><font face="Western"><a href="home1.htm">[home]</a>&nbsp; <a href="http://www.pcanet.org">[pca]</a>
+<a href="mission.htm">[missions]</a> <a href="Activity.htm">[activities]</a> <a href="goodnewslink.htm" target="_blank">[good news]</a>
+<a href="Events.htm">[announcements]</a>&nbsp; <a href="aboutus.htm">[about
+us]</a></font></center>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+Bible = "All Scripture quotations are from the Holy Bible, New International Version, .copyright 1973, 1978, 1984 by International Bible Society"
+John410 = "This is love:  Not that we loved God, but that he loved us, and gve is only Son as an atoning sacrifice for our sins."
+Psalm652 = "O you who hear prayer, to you all men will come."
+James3_9 = "With the tongue we praise our Lord and Father, and with it we curse men, who have been made in God's likeness."
+
+Psalm8_1_9 = "O LORD, our Lord, how majestic is your name in all the earth!  You have set your glory above the heavens.  From the lips of children and infants you have ordained praise because of your enemies, to silence the foe and the avenger.   When I consider your heavens, the work of your fingers, the moon and the stars, which you have set in place,  what is man that you are mindful of him, the son of man that you care for him?  You made him a little lower than the heavenly beings and crowned him with glory and honor.  You made him ruler over the works of your hands; you put everything under his feet: all flocks and herds, and the beasts of the field, the birds of the air, and the fish of the sea, all that swim the paths of the seas.  O LORD, our Lord, how majestic is your name in all the earth!"
+
+Genesis1_28 = "God blessed them and said to them, 'Be fruitful and increase in number; fill the earth and subdue it. Rule over the fish of the sea and the birds of the air and over every living creature that moves on the ground.'  Colossians 3:23-24 Whatever you do, work at it with all your heart, as working for the Lord, not for men, since you know that you will receive an inheritance from the Lord as a reward. It is the Lord Christ you are serving.<p><b>Colossians 3:23-24</b><p>Whatever you do, work at it with all your heart, as working for the Lord, not for men, since you know that you will receive an inheritance from the Lord as a reward. It is the Lord Christ you are serving."
+
+Acts17_29= "Therefore since we are God's offspring, we should not think that the divine being is like gold or silver or stone-an image made by man's design and skill."
+
+Psalm42_1_2 = "As the deer pants for streams of water, so my soul pants for you, O God.  My soul thirsts for God, for the living God. When can I go and meet with God?"
+
+var curSTR
+var a = "Ability"
+var b = "Identity"
+var c = "Meaning"
+var curr = 1
+var finA = 0
+var finB = 0
+var finC = 0
+var htmlRef
+var OpenWin
+
+function txtCounter(){
+
+	if( curr <= curSTR.length){
+            curr = curr + 1;
+	    OpenWin.document.close();
+
+	    if( finA == 1 ){
+		OpenWin.document.write("<body bgcolor='black'><center><font size=36 color='red'><b>" + a + "</font></b></center><br>");
+		finA = 1;
+	    }
+
+
+	    if( finB == 1 ){
+		OpenWin.document.write("<center><font size=36 color='orange'><b>" + b + "</font></b></center><br>");
+	    }
+
+	    OpenWin.document.write("<body bgcolor='black'><center><font size=36 color='green'><b>" + curSTR.substring(0,curr) + "</font></b></center>");
+
+	} else if( curSTR.substring(0, curr) == a){
+	    finA = 1
+	    curSTR = b;
+	    curr = 1;
+
+        } else if( curSTR.substring(0, curr) == b){
+	    finB = 1
+	    curSTR = c;
+	    curr = 1;
+
+	} else if( curSTR.substring(0, curr) == c){
+	    location.href = htmlRef
+	    OpenWin.close();
+	} else {
+	    location.href = htmlRef
+	}
+
+        OpenWin.opener.setTimeout("txtCounter()", 100)
+
+}
+
+
+function startTxtCounter(inA, inB, inC, inHTML){
+a = inA;
+b = inB;
+c = inC;
+curSTR = inA;
+htmlRef = inHTML;
+OpenWin = window.open("blank.htm","NewWin", "HEIGHT = 365, WIDTH=550")
+window.setTimeout("txtCounter()", 100)
+
+}
+
+
+function popup1(text, verse)
+      {
+OpenWindow=window.open("", "newwin", "width=300, height=125, toolbar=no,scrollbars=yes,menubar=no");
+OpenWindow.document.write("<TITLE>Holy Bible Reference&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TITLE>")
+OpenWindow.document.write("<BODY BGCOLOR=white>")
+OpenWindow.document.write("<h4>")
+OpenWindow.document.write(verse)
+OpenWindow.document.write("</h4>")
+OpenWindow.document.write(text)
+OpenWindow.document.write("</BODY>")
+OpenWindow.document.write("</HTML>")
+
+OpenWindow.document.close()
+self.name="main"
+     }
+
+
+function popup1XL(text, verse)
+      {
+OpenWindow=window.open("", "newwin", "Width=500, Height=400, scrollbars=yes");
+OpenWindow.document.write("<TITLE>Holy Bible Reference&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TITLE>")
+OpenWindow.document.write("<BODY BGCOLOR=white>")
+OpenWindow.document.write("<h4>")
+OpenWindow.document.write(verse)
+OpenWindow.document.write("</h4>")
+OpenWindow.document.write(text)
+OpenWindow.document.write("</BODY>")
+OpenWindow.document.write("</HTML>")
+
+OpenWindow.document.close()
+self.name="main"
+     }
+
+</SCRIPT>
+
+
+</head>
+<body link="MAROON" vlink="MAROON" background="whitemarb.jpg">
+<TABLE CELLSPACING=0 BORDER=0 CELLPADDING=0 WIDTH="100%">
+<TR><TD WIDTH=110 VALIGN="TOP" ROWSPAN=6><FONT FACE="Western" size = 4><br>
+<A href="InitGospel.htm"> Contents </a><br><br>
+<A href="RelCreated.htm">I Relationship Created...</a><br><br>
+<A href="RelBroken.htm">II Relationship Broken...</a><br><br>
+<A href="GodTook.htm">III God Took Initiative...</a><br><br>
+<A href="GodRestored.htm">IV God Sent His Son...</a><br><br>
+<A href="GodCalls.htm">V God Calls Everyone...</a><br><br>
+<A href="NowWhat.htm"> Now What.... </a><br>
+</font>
+<td width=30>
+<TD VALIGN="TOP" width="79%" ><p><BR>
+<CENTER><p><FONT FACE="Western" size = 4 color="maroon"><b>GOD CREATED US FOR RELATIONSHIP WITH HIMSELF</b><p></font></CENTER>
+<p><BR><font FACE="Western" size = 4 >
+The opening chapters of the Bible make one thing abundantly clear: we were created by the eternal God so that we might know and enjoy Him.  The Bible says that God made us in His image.
+<BLOCKQUOTE><i>"God created man in His own image, in the image of God He
+  created him; male and female He created them." (Genesis 1:27)</i></BLOCKQUOTE><p>
+Being made in the image of God speaks to issues of relationship with God and of our very existence in this world.  As image bearers of God:</font></td></tr>
+
+<TR><td><img src="redball.jpg" align=right valign="top">
+<TD VALIGN="TOP" width="79%" ><FONT FACE="Western" size = 4>
+<BLOCKQUOTE><br>Of all living creatures, we alone have the <font color="maroon"><b>ability</b></font> for spiritual relationship with God.  God has endowed us with a rational intellect and a spiritual capacity to know and relate to God.  Animals don't pray.  We can and do <a  title = "Psalm 6:52  'O you who hear prayer, to you all men will come.'" href="Javascript:popup1(Psalm652, 'Psalm 6:52')"><sup>2</sup></a>.  Prayer reminds us of this ability for relationship.</BLOCKQUOTE>
+</font></td></tr>
+<TR><td><img src="redball.jpg" align=right valign="top">
+<TD VALIGN="TOP" width="79%" ><FONT FACE="Western" size = 4><BLOCKQUOTE>
+Like a reflection in a mirror, an image finds its true <font color="maroon"><b>identity</b></font> in the one whose image is reflected<a  title="James 3:9  With the tongue we praise our Lord and Father, and with it we curse men, who have been made in God's likeness." href="Javascript:popup1(James3_9, 'James 3:9')"><sup>3</sup></a>.  As ones created in God's image, we can answer the question, "Who am I?" only in relationship to God <a  title = "Psalm 8:1-9 O LORD, our Lord, how majestic is your name in all the earth!  You have set your glory above the heavens.  From the lips of children and infants you have ordained praise because of your enemies, to silence the foe and the avenger.   When I consider your heavens, the work of your fingers, the moon and the stars, which you have set in place,  what is man that you are mindful of him, the son of man that you care for him?  You made him a little lower than the heavenly beings and crowned him with glory and honor.  You made him ruler over the works of your hands; you put everything under his feet: all flocks and herds, and the beasts of the field, the birds of the air, and the fish of the sea, all that swim the paths of the seas.  O LORD, our Lord, how majestic is your name in all the earth!" href="Javascript:popup1XL(Psalm8_1_9, 'Psalm 8:1-9')"><sup>4</sup></a>.
+</BLOCKQUOTE>
+</font></td></tr>
+<TR><td><img src="redball.jpg" align=right valign="top">
+<TD VALIGN="TOP" width="79%" ><FONT FACE="Western" size = 4><BLOCKQUOTE>
+<font color="maroon"><b>Meaning</b></font> in life for us is found in respect to God.  He gives direction and purpose in life<a Title="Genesis 1:28  God blessed them and said to them, 'Be fruitful and increase in number; fill the earth and subdue it. Rule over the fish of the sea and the birds of the air and over every living creature that moves on the ground.'
+
+Colossians 3:23-24 Whatever you do, work at it with all your heart, as working for the Lord, not for men, since you know that you will receive an inheritance from the Lord as a reward. It is the Lord Christ you are serving." href="Javascript:popup1XL(Genesis1_28, 'Genesis 1:28')"><sup>5</sup></a>.  The image of God gives us understanding of why we are here.</BLOCKQUOTE>
+</font></td></tr>
+<TR><td>
+<TD VALIGN="TOP" width="79%" ><FONT FACE="Western" size = 4>
+The image of God we bear says that we belong to God and that our lives are to be understood and lived in reference to God<a Title="Acts 17:29  Therefore since we are God's offspring, we should not think that the divine being is like gold or silver or stone-an image made by man's design and skill." href="Javascript:popup1(Acts17_29, 'Acts 17:29')"><sup>6</sup></a>.  The psalmist declares:
+<I><BLOCKQUOTE>"Know that the Lord is God.  It is He who made us and we are His." (Psalm 100:3)</BLOCKQUOTE></I>
+God's design in creation paints a picture of fullness and delight<a Title="Psalm 42:1-2   As the deer pants for streams of water, so my soul pants for you, O God.  My soul thirsts for God, for the living God. When can I go and meet with God?" href="Javascript:popup1(Psalm42_1_2, 'Psalm 42:1-2')"><sup>7</sup></a>
+ in knowing, loving and serving our Creator.<P>
+<B><I><a  href="RelBroken.htm">But something happened...</A></I></B>
+<p><br><BR><BR>
+<CENTER>
+<A href="home1.htm">[Home]</A>&nbsp;&nbsp;
+<A href="http://www.pcanet.org">[pca]</A>&nbsp;&nbsp;
+<A href="mission.htm">[missions]</A>&nbsp;&nbsp;
+<A href="Activity.htm">[activities]</A>&nbsp;&nbsp;
+<A href="Events.htm">[announcements]</A>&nbsp;&nbsp;
+<A href="aboutus.htm">[about us]</A>&nbsp;&nbsp;
+</CENTER>
+</font></tr></table>
+</body>
+</html>

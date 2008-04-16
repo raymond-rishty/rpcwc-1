@@ -1,0 +1,253 @@
+/* Browsers have a default margin and padding.  This overrides it.  The comma means 'or'. */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    font-size: 12px;
+    color: #666666;
+    text-align: left;
+    background: white;    	
+}
+
+#div_image {
+	padding: 10px;
+}
+
+#page-container {
+    width: 800px;
+    text-align: left;
+    background: white;
+	margin: auto;
+}
+
+#top {
+    background: #6D8A98;    	
+	text-align: right;
+	color: white;
+	height: 50px;
+	padding-bottom: 10px;
+}
+
+#top a {
+    color: white;
+    text-decoration: none;
+}
+
+#top a:hover {
+    color: #B7D87D;
+}
+
+#header {
+    background: white;
+	float:right;
+	heading: 150px;
+}
+
+#mainmenu {
+ 	clear:both;
+    background: #446A7D;
+	color:white;
+	padding: 5px;
+	font-size: 14px;
+}
+
+#mainmenu a {
+    color: white;
+    text-decoration: none;
+}
+
+#mainmenu a:hover {
+    color: #B7D87D;
+}
+
+#topleftbox {
+	float:left;
+	background: #92B18A;
+	width: 140px;
+	color: white;
+	font-size: 10px;
+	height: 143px;
+	text-align: left;
+	padding: 5px;
+}
+
+#topleftbox a {
+    color: white;
+    text-decoration: none;
+}
+
+#topleftbox a:hover {
+    color: #6D8A98;
+}
+
+
+#leftside {
+	float:left;
+    background: #B7D87D;
+	width: 130px;
+	color: white;
+	padding: 10px;
+}
+
+#leftside a {
+    color: white;
+    text-decoration: none;
+}
+
+#leftside a:hover {
+    color: #6D8A98;
+}
+
+
+#rightside {
+	float:right;
+    background: #B7D87D;
+	width: 150px;
+	color: white;	
+	text-align: right;
+	width: 130px;
+	color: white;
+	padding: 10px;
+}
+
+#rightside a {
+    color: white;
+    text-decoration: none;
+}
+
+#rightside a:hover {
+    color: #6D8A98;
+}
+
+#content_combined {
+    color: black;
+    background: white;
+	width: 460px;
+	float:left;
+	padding: 10px;
+	font-size: 12px;
+}
+
+#content_combined a {
+    color: #6D8A98;
+    text-decoration: underline;
+}
+
+#content_combined a:hover {
+    color: #B7D87D;
+    text-decoration: none;	
+}
+
+
+#content_left {
+    color: black;
+    background: white;
+	width: 230px;
+	float:left;
+	padding: 10px;
+	font-size: 12px;
+}
+
+#content_left a {
+    color: #6D8A98;
+    text-decoration: underline;
+}
+
+#content_left a:hover {
+    color: #B7D87D;
+    text-decoration: none;	
+}
+
+#content_right {
+    color: black;
+    background: white;
+	width: 230px;	
+	float:left;
+	padding: 10px;
+	font-size: 12px;
+}
+
+#content_right a {
+    color: #6D8A98;
+    text-decoration: underline;
+}
+
+#content_right a:hover {
+    color: #B7D87D;
+    text-decoration: none;	
+}
+
+#footer {
+	clear:both;
+    background: #6D8A98;
+	text-align: center;
+	color: white;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #B7D87D;
+}
+
+/* Side titles */
+
+h2 {
+
+	color:	white;
+	font-size: 14px;	
+	font-weight: bold;
+	
+}
+
+/* Content titles */
+
+h3 {
+
+	color:	#B7D87D;
+	font-size: 14px;	
+	font-weight: bold;
+	
+}
+
+h4 {
+
+	color:	#6D8A98;
+	font-size: 18px;	
+	font-weight: bold;
+	
+}
+
+#dropmenudiv{
+    background: #6D8A98;
+	position:absolute;
+	border:1px solid black;
+	border-bottom-width: 1px;
+	line-height:18px;
+	z-index:100;
+}
+
+#dropmenudiv a{
+	width: 100%;
+	display: block;
+	text-indent: 3px;
+	/*border-bottom: 1px solid black;*/
+	padding: 1px 0;
+	text-decoration: none;
+	text-align: left;
+    background: #6D8A98;	
+	color: white;
+	font-size: 10px;
+	
+}
+
+#dropmenudiv a:hover{ /*hover background color*/
+    color: #B7D87D;
+}

@@ -1,0 +1,117 @@
+﻿<%@ Master Language="C#" %>
+
+<%@ Register TagName="topleftbox" TagPrefix="include" Src="~/includes/topleftbox.ascx" %>
+<%@ Register TagName="leftside" TagPrefix="include" Src="~/includes/leftside.ascx" %>
+<%@ Register TagName="mainmenu" TagPrefix="include" Src="~/includes/mainmenu.ascx" %>
+<%@ Register TagName="header" TagPrefix="include" Src="~/includes/heading.ascx" %>
+<%@ Register TagName="rightside" TagPrefix="include" Src="~/includes/rightside.ascx" %>
+<%@ Register TagName="footer" TagPrefix="include" Src="~/includes/footer.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <title>Reformed Presbyterian Church of West Chester, PA</title>
+    <meta http-equiv="Content-Language" content="en-us" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <meta name="MSSmartTagsPreventParsing" content="true" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+    <link rel="stylesheet" type="text/css" href="../css/master.css" runat="server" />
+    <link rel="stylesheet" type="text/css" href="../css/esvtext.css" runat="server" />
+    <link rel="stylesheet" type="text/css" href="../css/thickbox.css" runat="server"  media="screen" />
+
+    <script type="text/javascript" src="../scripts/jquery.js"></script>
+    <script type="text/javascript" src="../scripts/thickbox.js"></script>
+
+    <!-- The following are for site traffic analysis -->
+
+    <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3375098-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+    </script>
+    <script src="http://www.google.com/jsapi?key=ABQIAAAAm3W1dWSp28bnsTNS8d3YjBQ6Az9DtOpeO68GL1uvpKxuBRsCORS7EacS20iqfxoMbZ9v3xFfjBkxjg" type="text/javascript"></script>
+    
+    <script type="text/javascript">
+    //<![CDATA[
+    
+    google.load("search", "1");
+    var searchControl;
+    
+    function initialize() {
+        // Create a search control
+        searchControl = new google.search.SearchControl();
+        searchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
+        searchControl.setSearchCompleteCallback(null,
+        function() {
+          document.getElementById("searchResults").style.display = "inline";
+          document.getElementById("main_content").style.display = "none";
+            //callbackFunction(point);
+        }); 
+
+        // site restricted web search with custom label
+        // and class suffix
+        var siteSearch = new google.search.WebSearch();
+        siteSearch.setUserDefinedLabel("RPCWC.org");
+        siteSearch.setUserDefinedClassSuffix("siteSearch");
+        siteSearch.setSiteRestriction("rpcwc.org");
+        siteSearch.setResultSetSize(google.search.Search.LARGE_RESULTSET);
+
+        options = new google.search.SearcherOptions();
+        options.setExpandMode(google.search.SearchControl.EXPAND_MODE_OPEN);
+        options.setRoot(document.getElementById("searchResults"));
+        searchControl.addSearcher(siteSearch, options);
+
+        // tell the searcher to draw itself and tell it where to attach
+        searchControl.draw(document.getElementById("searchbox"));
+    }
+    
+    google.setOnLoadCallback(initialize);    
+    //]]>
+    </script>
+
+</head>
+<body>
+    <form runat="server">
+    <div id="page-container">
+        <div style="padding-bottom: 10px; background: #6D8A98;">
+        </div>
+        <div id="topleftbox">
+            <input type="text" id="query" size="15" />
+            <span onclick='javascript:searchControl.execute(document.getElementById("query").value);'>search</span>
+        </div>
+        <div id="header">
+            <include:header runat="server" />
+        </div>
+        <div id="mainmenu">
+            <include:mainmenu runat="server" />
+        </div>
+        <div id="leftside">
+            <include:leftside runat="server" />
+        </div>
+        <div id="rightside">
+            <include:rightside runat="server" />
+        </div>
+        <div id="content_combined">
+            <div id="main_content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="searchResults" style="display:none;"></div>
+        </div>
+        <div id="footer">
+            <include:footer runat="server" />
+        </div>
+        <div id="searchbox" style="display:none;"></div>
+    </form>
+</body>
+</html>
