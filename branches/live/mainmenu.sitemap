@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/mainmenu.aspx" title="Top Menu"  description="">
+    <siteMapNode url="~/Default.aspx" title="Home"  description="" />
+    <siteMapNode url="" title="Sunday Bible School"  description="">
+      <siteMapNode url="~/ss_desc.aspx" title="Description" description="" />
+      <siteMapNode url="~/ss_classes.aspx" title="Classes/Location" description="" />
+      <siteMapNode url="~/ss_adult.aspx" title="Adult Classes" description="" />
+      <siteMapNode url="~/ss_childrens.aspx" title="Childrens Classes" description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Small Groups" description="">
+      <siteMapNode url="~/sg_clusterletter.aspx" title="Cluster Letter"  description="" />
+      <siteMapNode url="~/sg_clustermanual.aspx" title="Cluster Manual" description="" />
+      <siteMapNode url="~/sg_studyforms.aspx" title="Current Study" description="" />
+      <siteMapNode url="~/sg_location.aspx" title="Cluster Groups" description="" />
+      <siteMapNode url="~/sg_registration.aspx" title="Registration" description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Ministries" description="" >
+      <siteMapNode url="~/min_women.aspx" title="Women"  description="" />
+      <siteMapNode url="~/min_men.aspx" title="Men" description="" />
+      <siteMapNode url="~/min_child.aspx" title="Children" description="" />
+      <siteMapNode url="~/min_youth.aspx" title="Youth" description="" />
+      <siteMapNode url="~/min_covenant_keepers.aspx" title="Covenant Keepers" description="" />
+      <siteMapNode url="~/min_rpc_supperclubs.aspx" title="RPC Supper Clubs" description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Missions" description="">
+      <siteMapNode url="~/missions.aspx" title="Missionaries" />
+      <siteMapNode url="http://www.pca-mna.org" title="Mission to North America" description="" />
+      <siteMapNode url="http://www.mtw.org/home/site/templates/splash.asp" title="Mission to the World" description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Prayer" description="" >
+      <siteMapNode url="~/prayer.aspx" title="Prayer Requests"  description="" />
+      <siteMapNode url="http://www.chopministry.net/" title="Community Houses of Prayer"  description="" />
+      <siteMapNode url="~/epguide.aspx" title="Ephesians Prayer Guide"  description="" />
+      <siteMapNode url="~/members/weeklyprayer.aspx" title="Weekly Prayer List"  description="" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Default.aspx" title="Home" description="">
+    <siteMapNode url="welcome.aspx" title="Welcome">
+      <siteMapNode url="letterpastor.aspx" title="Letter From Pastor" />
+      <siteMapNode url="contactus.aspx" title="Contact Us" />
+      <siteMapNode url="directions.aspx" title="Directions" />
+      <siteMapNode url="regular.aspx" title="Regular Activities" />
+      <siteMapNode url="services.aspx" title="Sunday Services" />
+      <siteMapNode url="brochure.pdf" title="Church Brochure" />
+    </siteMapNode>
+    <siteMapNode url="aboutussection.aspx" title="About Us">
+      <siteMapNode url="aboutus.aspx" title="Vision and Mission" />
+      <siteMapNode url="beliefs.aspx" title="Beliefs" />
+      <siteMapNode url="ministryplan.aspx" title="RPC Ministry Plan" />
+      <siteMapNode url="leadership.aspx" title="Leadership" />
+      <siteMapNode url="history.aspx" title="History of RPC" />
+      <siteMapNode url="newsletters.aspx" title="Grapevine Newsletter" />
+      <siteMapNode url="community.aspx" title="RPC Notes &amp;amp; News" />
+    </siteMapNode>
+    <siteMapNode url="314.aspx" title="314 Ministry House" />
+    <siteMapNode siteMapFile="resources.sitemap" />
+    <siteMapNode siteMapFile="mainmenu.sitemap" />
+  </siteMapNode>
+</siteMap>

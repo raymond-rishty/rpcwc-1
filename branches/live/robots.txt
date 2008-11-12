@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /newsite
+Disallow: /scripture.ashx
+Disallow: /members
+Disallow: /maintenance

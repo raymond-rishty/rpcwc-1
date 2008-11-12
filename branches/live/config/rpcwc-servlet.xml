@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  <import resource="bo/rpcwc-manager.xml" />
+  <object id="calendarEdit" type="rpcwc.web.CalendarMaintenanceController">
+    <property name="calendarManager" ref="CalendarManager" />
+  </object>
+  <object id="prayer" type="rpcwc.web.PrayerRSSHttpHandler">
+    <property name="rssManager" ref="RSSManager" />
+  </object>
+  <object id="podcast" type="rpcwc.web.PodcastHttpHandler">
+
+    <property name="podcastManager" ref="PodcastManager" />
+  </object>
+  <object name="calendar" type="rpcwc.web.EventCalendarICalHttpHandler">
+    <property name="calendarManager" ref="CalendarManager" />
+    <property name="prodId" value="-//Reformed Presbyterian Church of West Chester PA//NONSGML rpcwc.org//EN" />
+    <property name="xWrCalName" value="Reformed Presbyterian Church Events" />
+  </object>
+  <object name="basePage" abstract="true">
+    <property name="MasterPageFile" value="~/MasterPage.master"/>
+
+  </object>
+  <object type="~/Default.aspx" parent="basePage">
+    <property name="calendarManager" ref="CalendarManager" />
+  </object>
+  <object type="~/blog.aspx" parent="basePage">
+    <property name="blogManager" ref="BlogManager" />
+  </object>
+  <object type="~/sermon.aspx" parent="basePage">
+    <property name="BlogManager" ref="BlogManager" />
+    <property name="SermonSeriesList">
+      <list>
+        <object type="rpcwc.vo.Blog.SermonSeries">
+          <property name="Label" value="ecclesiastes08" />
+          <property name="ImageUrl" value="images/sermon/ecclesiastes.001.png" />
+          <property name="Caption" value="Ecclesiastes: Making Sanity out of Vanity" />
+        </object>
+        <object type="rpcwc.vo.Blog.SermonSeries">
+          <property name="Label" value="ephesians08" />
+          <property name="ImageUrl" value="images/sermon/ephesians.001.jpg" />
+          <property name="Caption" value="Ephesians: The Gospel Message for Believers" />
+        </object>
+      </list>
+    </property>
+  </object>
+  <object type="~/bulletin.aspx" parent="basePage">
+    <property name="bulletinManager" ref="BulletinManager" />
+
+  </object>
+  <object type="~/calendar.aspx" parent="basePage">
+    <property name="calendarManager" ref="CalendarManager" />
+  </object>
+  <object type="~/community.aspx" parent="basePage">
+    <property name="newsAndNotesManager" ref="NewsAndNotesManager" />
+  </object>
+  <object type="~/guest.aspx" parent="basePage">
+    <property name="emailSender" ref="EmailSender" />
+
+  </object>
+  <object type="~/sg_registration.aspx" parent="basePage">
+    <property name="emailSender" ref="EmailSender" />
+  </object>
+  <object type="~/upcomingevents.aspx" parent="basePage">
+    <property name="calendarManager" ref="CalendarManager" />
+  </object>
+  <object type="~/members/directory.aspx" parent="basePage">
+    <property name="directoryDAO" ref="DirectoryDAO" />
+
+  </object>
+  <object type="~/maintenance/calendar.aspx" parent="basePage" />
+  <object id="EmailSender" type="rpcwc.web.email.EmailSender">
+    <property name="pastorEmail" value="pastor@rpcwc.org" />
+    <property name="officeEmail" value="rpc_office@rpcwc.org" />
+    <property name="toEmail" value="webmaster@rpcwc.org" />
+    <property name="fromEmail" value="mailbot@rpcwc.org" />
+    <property name="password" value="emailbot" />
+    <property name="smtpClientPort" value="587" />
+
+    <property name="smtpClientHost" value="smtp.gmail.com" />
+  </object>
+  <object type="~/maintenance/cache.aspx">
+    <property name="CacheManager" ref="CacheManager" />
+  </object>
+</objects>
